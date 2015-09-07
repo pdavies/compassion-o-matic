@@ -3,7 +3,7 @@
     "name": "Compassion-O-Matic",
     "author": "Philip Davies",
     "description": "Compassion-O-Matic changes \"migrant\" to \"refugee\", for an eye-opening effect on coverage of the 2015 crisis in Europe.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "content_scripts": [
         {
             "matches": [
