@@ -15,9 +15,9 @@ chrome.storage.local.get(null, function(data) {
 
         if (node.nodeType === 3) {
           var text = node.nodeValue;
-          var replacedText = text.replace(/\bmigrant/g, marker + 'refugee' + marker).
-                                  replace(/\bMigrant/g, marker + 'Refugee' + marker).
-                                  replace(/\bMIGRANT/g, marker + 'REFUGEE' + marker);
+          var replacedText = text.replace(/\bmigrant/g, marker + 'refugee').
+                                  replace(/\bMigrant/g, marker + 'Refugee').
+                                  replace(/\bMIGRANT/g, marker + 'REFUGEE');
           if (replacedText !== text) {
             element.replaceChild(document.createTextNode(replacedText), node);
           }
