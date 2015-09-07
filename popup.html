@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Compassion-O-Matic Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 300px;
+      }
+      img {
+        display: block;
+        margin: auto;
+      }
+      h2 {
+        text-align: center;
+      }
+      .checkboxes {
+        list-style: none;
+      }
+
+      blockquote {
+        border-bottom: 1px solid gray;
+        font-size: 75%;
+        font-style: italic;
+      }
+      footer {
+        display: block;
+        color: #666;
+        font-style: italic;
+        font-size: 65%;
+      }
+    </style>
+
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <img src="iconfull.png" />
+    <h2>Compassion-O-Matic</h2>
+    <blockquote>
+      <p>"A migrant chooses to leave, whereas a refugee is forced to leave."</p>
+      <footer>United Nations 1951 Refugee Convention</footer>
+    </blockquote>
+    <ul class="checkboxes">
+      <li><label>
+        <input type="checkbox" id="extensionDisabled"/>
+        Pause Compassion-O-Matic
+      </label></li>
+      <li><label>
+        <input type="checkbox" id="showMarker"/>
+        Mark changes with *stars*
+      </label></li>
+    </ul>
+    <footer class="credits">
+      Based on code from http://9to5google.com/2015/06/14/how-to-make-a-chrome-extensions/
+    </footer>
+    <footer class="credits">
+      Icon made by www.freepik.com from www.flaticon.com is licensed under Creative Commons BY 3.0
+    </footer>
+
+  </body>
+
+</html>

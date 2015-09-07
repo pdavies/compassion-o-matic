@@ -1,0 +1,28 @@
+{
+"manifest_version": 2,
+    "name": "Compassion-O-Matic",
+    "author": "Philip Davies",
+    "description": "Compassion-O-Matic changes \"migrant\" to \"refugee\", for an eye-opening effect on coverage of the 2015 crisis in Europe.",
+    "version": "1.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_icon": "icon24.png",
+        "default_popup": "popup.html",
+        "default_title": "Compassion-O-Matic"
+    },
+    "icons": { "16": "icon24.png",
+           "48": "icon64.png",
+          "128": "icon128.png" },
+    "permissions": ["storage"]
+}
